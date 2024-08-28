@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 number = 3.14159
-print('%.2f {numbeer}')
+print('%.2f {number}')
