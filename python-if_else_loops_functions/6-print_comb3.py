@@ -4,7 +4,7 @@
 for first in range(0, 10):
 # second first+1 - 9
     for second in range(first+1, 10):
-        if first is 8 and second is 9:
+        if first == 8 and second == 9:
             print(f"{first}{second}")
         else:
             print(f"{first}{second}", end=", ")
