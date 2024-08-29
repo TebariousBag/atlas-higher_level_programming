@@ -8,3 +8,4 @@ for first in range(0, 10):
             print(f"{first}{second}")
         else:
             print(f"{first}{second}", end=", ")
+print() # add newline?
