@@ -15,4 +15,3 @@ elif lastdigit > 5:
     print(f'{str1} {number} is {lastdigit} {str2}')
 elif lastdigit < 6 != 0:
     print(f'{str1} {number} is {lastdigit} {str4}')
-    
