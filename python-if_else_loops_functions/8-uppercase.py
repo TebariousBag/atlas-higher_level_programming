@@ -3,7 +3,7 @@ def uppercase(str):
     newstr = ""  # create empty string
     for letter in str:
         upper = ord(letter)  # turn numeric
-        upper = upper - 32  # turn to upper
+        upper = upper - 32  # turn to uppercase
         if letter >= 'a' and letter <= 'z':
             newstr = newstr + chr(upper)  # add the eppercase character
         else:
