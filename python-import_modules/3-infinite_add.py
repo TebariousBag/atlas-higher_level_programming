@@ -2,11 +2,10 @@
 if __name__ == "__main__":
     import sys
 
-    arg = sys.argv  # get args[]
+    args = sys.argv  # get args[]
     total = 0  # holder for total
     
-    if len(arg) > 1:
-        for num in range(arg):
-            total += int(num)
+    for arg in args:
+        total += int(arg)
     print(f"{total}")
     
