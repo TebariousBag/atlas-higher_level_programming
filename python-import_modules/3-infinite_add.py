@@ -7,7 +7,7 @@ if __name__ == "__main__":
     
     if len(args) > 1:  # if more than 1 arg
         for arg in args:
-            if arg != arg[0]:  # need to skip past name
-                total += int(args[arg])
+            if arg != args[0]:  # need to skip past name
+                total += int(arg)
     print(f"{total}")
     
