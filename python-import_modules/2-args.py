@@ -6,7 +6,7 @@ if __name__ == "__main__":
     numargs = len(sys.argv) - 1  # get length of args minus name
 
     if numargs == 0:  # base case for zero args
-        print("0 arguments,")
+        print("0 arguments.")
     elif numargs == 1:  # special case for 1 arg
         print("1 argument:")
     else:
