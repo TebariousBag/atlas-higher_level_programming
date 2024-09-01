@@ -7,4 +7,4 @@ def no_c(my_string):
             c += i
         else:
             new += i  # str w/o c's
-        return (new)
+    return (new)
