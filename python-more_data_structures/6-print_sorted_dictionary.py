@@ -5,5 +5,5 @@ def print_sorted_dictionary(a_dictionary):
     sorted.sort()
     # sort them
     for key in sorted:
-        print("{}:{}".format(key, a_dictionary[key]))
+        print("{}: {}".format(key, a_dictionary[key]))
         # print top level key, then lower key
