@@ -10,5 +10,4 @@ def safe_print_list_integers(my_list=[], x=0):
         # dont print if value or type error
             continue
     print()
-        # newline
     return (counter)
