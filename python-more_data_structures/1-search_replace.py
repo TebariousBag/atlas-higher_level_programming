@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    new = []
+    new_list = []
     # empty list
-    for element in new:
+    for element in new_list:
     # looking for search, and replacing with replace
         if element == search:
-            new.append(replace)
+            new_list.append(replace)
     # otherwise just append the element
         else:
-            new.append(element)
-    return (new)
+            new_list.append(element)
+    return (new_list)
