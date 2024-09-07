@@ -30,7 +30,16 @@ class Square:
     def area(self):
         """ Return area of square, size * size. Public Instance """
         return (self._size * self._size)
+    
+    def position(self):
+        """ get position """
+        return (self._position)
 
+        @position.setter
+    def position(self, value):
+        """ set position """
+        self._position = value
+        
     def my_print(self):
         """ print square of # """
         for row in range(self._size):
