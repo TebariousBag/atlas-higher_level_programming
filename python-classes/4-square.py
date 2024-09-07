@@ -25,7 +25,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         """ its okay to assign value """
-        self.size = value
+        self._size = value
         
     def area(self):
         """ Return area of square, size * size. Public Instance """
