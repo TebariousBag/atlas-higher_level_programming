@@ -22,7 +22,7 @@ class Square:
         and check if value less than 0"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         """ its okay to assign value """
         self.size = value
