@@ -9,12 +9,12 @@ class Square:
         """ Initialize square
         Arg:
             size: the size of square """
-        self.__size = size
+        self._size = size
     """ retrieve size """
     @property
     def size(self):
         """ size of square """
-        return (self.__size)
+        return (self._size)
     """ set the size here """
     @size.setter
     def size(self, value):
@@ -22,11 +22,11 @@ class Square:
         and check if value less than 0"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
         """ its okay to assign value """
         self.size = value
         
     def area(self):
         """ Return area of square, size * size. Public Instance """
-        return (self.__size * self.__size)
+        return (self._size * self._size)
