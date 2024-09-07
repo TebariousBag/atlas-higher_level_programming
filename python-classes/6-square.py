@@ -37,6 +37,7 @@ class Square:
         """ Return area of square, size * size. Public Instance """
         return (self._size * self._size)
     
+    @property
     def position(self):
         """ get position """
         return (self._position)
