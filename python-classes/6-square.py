@@ -5,7 +5,7 @@
 
 class Square:
     """ Square """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0,0)):
         """ Initialize square
         Arg:
             size: the size of square """
@@ -27,6 +27,7 @@ class Square:
         """ its okay to assign value """
         self._size = value
 
+    @property
     def area(self):
         """ Return area of square, size * size. Public Instance """
         return (self._size * self._size)
