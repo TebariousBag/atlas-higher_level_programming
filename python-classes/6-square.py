@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 
-""" Define a class square """
+"""
+Define a class square
+"""
 
 
 class Square:
-    """ Square """
+    """
+    Square
+    """
     def __init__(self, size=0, position=(0,0)):
         """ Initialize square
         Arg:
@@ -39,7 +43,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """ set position """
+        """ set position of square """
         self._position = value
         
     def my_print(self):
