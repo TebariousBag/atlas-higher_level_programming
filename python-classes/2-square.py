@@ -9,7 +9,7 @@ class Square:
         """ Initialize square
         Arg:
             size: the size of square """
-        
+
         """ isinstance(object, type)
             check if size is not int,
             and check if value less than 0"""
