@@ -1,25 +1,18 @@
 #!/usr/bin/python3
+Square = __import__('3-square').Square
 
-""" Define a class square """
+my_square_1 = Square(3)
+print("Area: {}".format(my_square_1.area()))
 
+try:
+    print(my_square_1.size)
+except Exception as e:
+    print(e)
 
-class Square:
-    """ Square """
-    def __init__(self, size=0):
-        """ Initialize square
-        Arg:
-            size: the size of square """
+try:
+    print(my_square_1.__size)
+except Exception as e:
+    print(e)
 
-        """ isinstance(object, type)
-            check if size is not int,
-            and check if value less than 0"""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        """ its okay to assign value """
-        self.__size = size
-
-    def area(self):
-        """ Return area of square, size * size. Public Instance """
-        return (self.__size * self.__size)
+my_square_2 = Square(5)
+print("Area: {}".format(my_square_2.area()))
