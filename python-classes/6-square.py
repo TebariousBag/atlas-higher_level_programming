@@ -10,6 +10,7 @@ class Square:
         Arg:
             size: the size of square """
         self._size = size
+        self._position = position
     """ retrieve size """
     @property
     def size(self):
