@@ -5,8 +5,9 @@
 class Rectangle:
     """ Rectangle """
     pass
-def __init__(self, width=0, height=0):
-    """ initialize rectangle 
+    
+    def __init__(self, width=0, height=0):
+        """ initialize rectangle 
     Args:
         width (int): width
         height (int): height
