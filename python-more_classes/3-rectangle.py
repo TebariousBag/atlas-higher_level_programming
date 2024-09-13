@@ -51,3 +51,13 @@ class Rectangle:
         if self._width == 0 or self._height == 0:
             return (0)
         return (2*(self._width + self.height))
+
+    def __str__(self):
+        """ printable rectangle of # symbols """
+        
+        rectangle = []
+        if self._width is 0 or self.height is 0:
+            return ("")
+        for i in range(self.height - 1):
+            rectangle.apppend('#')
+        
