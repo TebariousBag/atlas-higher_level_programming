@@ -61,7 +61,7 @@ class Rectangle:
             rectangle += "#" * self._width + "\n"
         rectangle += "#" * self._width
         return (rectangle)
-    
+
     def __repr__(self):
         """ string representation """
         rectangle = ' '
