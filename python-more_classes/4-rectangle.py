@@ -67,4 +67,4 @@ class Rectangle:
         rectangle = ' '
         if self._width == 0 or self._height == 0:
             return (rectangle)
-        return (f"Rectangle{self._width}, {self._height}")
+        return (f"Rectangle({self._width}, {self._height})")
