@@ -60,5 +60,5 @@ class Rectangle:
             return ("")
         for i in range(self.height):
             rectangle.apppend("#" * self._width)
-        return ("\n".join(rectangle))
+        return ('\n'.join(rectangle))
         
