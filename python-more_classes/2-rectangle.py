@@ -4,9 +4,9 @@
 
 class Rectangle:
     """ Rectangle """
-    
+
     def __init__(self, width=0, height=0):
-        """ initialize rectangle 
+        """ initialize rectangle
     Args:
         width (int): width
         height (int): height
@@ -18,7 +18,7 @@ class Rectangle:
     def width(self):
         """ get width """
         return self._width
-    
+
     @width.setter
     def width(self, value):
         """ set width """
@@ -32,7 +32,7 @@ class Rectangle:
     def height(self):
         """ get height """
         return self._height
-    
+
     @height.setter
     def height(self, value):
         """ set height """
@@ -41,11 +41,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
-        
+
     def area(self):
         """ are of rectangle """
         return (self._width * self._height)
-    
+
     def perimeter(self):
         """ perimeter of rectangle """
         if self._width == 0 or self._height == 0:
