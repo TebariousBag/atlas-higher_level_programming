@@ -58,7 +58,7 @@ class Rectangle:
         rectangle = []
         if self._width is 0 or self.height is 0:
             return ("")
-        for i in range(self.height):
+        for i in range(self._height):
             rectangle.apppend("#" * self._width)
         return ('\n'.join(rectangle))
         
