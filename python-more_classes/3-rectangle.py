@@ -56,7 +56,7 @@ class Rectangle:
         """ printable rectangle of # symbols """
         
         rectangle = []
-        if self._width is 0 or self.height is 0:
+        if self._width is 0 or self._height is 0:
             return ("")
         for i in range(self._height):
             rectangle.apppend("#" * self._width)
