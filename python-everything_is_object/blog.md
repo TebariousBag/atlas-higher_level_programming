@@ -1,4 +1,5 @@
 
+![Everything is object!](https://github.com/user-attachments/assets/c267dd51-00dc-486c-acb8-405f1018867c)
 # Python: Everything is object!
 
 ## Introduction
