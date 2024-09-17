@@ -4,12 +4,10 @@ How to use 7-base_geometry
 
 This modue defines class BaseGeometry
 
-::
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
     >>> bg = BaseGeometry()
     >>> type(bg)
     <class '7-base_geometry.BaseGeometry'>
-::
 
 Testing both functions
 
