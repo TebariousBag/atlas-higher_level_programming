@@ -22,7 +22,7 @@ class Student:
                 if i in self.__dict__.keys():
                     dict[i] = self.__dict__[i]
             return dict
-        
+
     def reload_from_json(self, json):
         """ attr of json to self """
         for keys, values in json.items():
