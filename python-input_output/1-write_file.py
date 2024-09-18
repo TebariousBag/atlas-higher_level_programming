@@ -3,7 +3,7 @@
 
 
 def write_file(filename="", text=""):
-    """ writes text to file and returns 
+    """ writes text to file and returns
     number of char written
     """
     with open(filename, 'w+') as f:
