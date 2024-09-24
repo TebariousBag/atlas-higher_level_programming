@@ -73,9 +73,9 @@ class Rectangle(Base):
             
         for i in range(self.height):
             for j in range(self.x):
-                print(" ")
+                print(" ", end="")
             for k in range(self.width):
-                print("#")
+                print("#", end="")
             """ print # width amount of times """
 
     def __str__(self):
