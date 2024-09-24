@@ -71,10 +71,10 @@ class Rectangle(Base):
         for i in range(self.y):
             print()
             
-        for i in range(self.height):
-            for j in range(self.x):
+        for i in range(self.__height):
+            for j in range(self.__x):
                 print(" ", end="")
-            for k in range(self.width):
+            for k in range(self.__width):
                 print("#", end="")
             """ print # width amount of times """
 
