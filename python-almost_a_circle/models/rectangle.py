@@ -76,7 +76,7 @@ class Rectangle(Base):
                 print(" ", end="")
             for k in range(self.__width):
                 print("#", end="")
-            """ print # width amount of times """
+            print()
 
     def __str__(self):
         """ return print() and string() of rectangle """
