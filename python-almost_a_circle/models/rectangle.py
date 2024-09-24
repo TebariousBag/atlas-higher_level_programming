@@ -80,7 +80,19 @@ class Rectangle(Base):
 
     def update(self, *args):
         """ assign arg to each attribute """
-        pass
+        for count, i in enumerate(args):
+            if count == 0:
+                self.id = i
+            elif count == 1:
+                self.width = i
+            elif count == 2:
+                self.height = i
+            elif count == 3:
+                self.x = i
+            elif count == 4:
+                self.y = i
+            else:
+                continue
 
     def __str__(self):
         """ return print() and string() of rectangle """
