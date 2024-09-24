@@ -78,6 +78,10 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
+    def update(self, *args):
+        """ assign arg to each attribute """
+        pass
+
     def __str__(self):
         """ return print() and string() of rectangle """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
