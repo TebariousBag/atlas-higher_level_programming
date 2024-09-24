@@ -70,7 +70,7 @@ class Rectangle(Base):
         """ print rectangle with # """
         for i in range(self.y):
             print()
-            
+
         for i in range(self.__height):
             for j in range(self.__x):
                 print(" ", end="")
