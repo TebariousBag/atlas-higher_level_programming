@@ -63,5 +63,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """ are of rectangle """
+        """ area of rectangle """
         return self.__width * self.__height
+
+    def display(self):
+        """ print rectangle with # """
+        for i in range(self.height):
+            print("#" * self.width)
+            """ print # width amount of times """
