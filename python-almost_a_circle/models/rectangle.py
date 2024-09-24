@@ -68,6 +68,9 @@ class Rectangle(Base):
 
     def display(self):
         """ print rectangle with # """
+        for i in range(self.y):
+            print()
+            
         for i in range(self.height):
             print("#" * self.width)
             """ print # width amount of times """
