@@ -78,21 +78,36 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ assign arg to each attribute """
-        for count, i in enumerate(args):
-            if count == 0:
-                self.id = i
-            elif count == 1:
-                self.width = i
-            elif count == 2:
-                self.height = i
-            elif count == 3:
-                self.x = i
-            elif count == 4:
-                self.y = i
-            else:
-                continue
+        if args:
+            for count, i in enumerate(args):
+                if count == 0:
+                    self.id = i
+                elif count == 1:
+                    self.width = i
+                elif count == 2:
+                    self.height = i
+                elif count == 3:
+                    self.x = i
+                elif count == 4:
+                    self.y = i
+                else:
+                    continue
+        elif len(kwargs) > 0:
+            for k, value in kwargs.items():
+                if k == "id":
+                    self.id = value
+                elif k == "width":
+                    self.width = value
+                elif k == "height":
+                    self.height = value
+                elif k == "x":
+                    self.x = value
+                elif k == "y":
+                    self.y = value
+                else:
+                    continue
 
     def __str__(self):
         """ return print() and string() of rectangle """
