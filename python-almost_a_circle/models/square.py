@@ -54,8 +54,8 @@ class Square(Rectangle):
         """ return json """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
-        tojson = json.dumps(list_dictionaries)
-        return tojson
+        to_json = json.dumps(list_dictionaries)
+        return to_json
 
     def __str__(self):
         """ str represtation """
