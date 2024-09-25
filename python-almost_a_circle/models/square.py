@@ -20,6 +20,35 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def update(self, *args, **kwargs):
+        """ assign args to sttributes """
+        if args:
+            for count, i in enumerate(args):
+                if count == 0:
+                    self.id = i
+                if count == 1:
+                    self.size = i
+                if count == 2:
+                    self.x = i
+                if count == 3:
+                    self.y = i
+                else:
+                    continue
+
+        elif len(kwargs) > 0:
+            for k, value in kwargs.items():
+                if k == "id":
+                    self.id = value
+                if k == "size":
+                    self.width = value
+                    self.height = value
+                elif k == "x":
+                    self.x = value
+                elif k == "y":
+                    self.y = value
+                else:
+                    continue
+
     def __str__(self):
         """ str represtation """
         return "[Square] ({}) {}/{} - {}".format(
