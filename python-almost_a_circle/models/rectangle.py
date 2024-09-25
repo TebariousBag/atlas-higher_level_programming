@@ -109,6 +109,17 @@ class Rectangle(Base):
                 else:
                     continue
 
+    def to_dictionary(self):
+        """ returns the dictionary representation of Rectangle """
+        dict = {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+		}
+        return dict
+
     def __str__(self):
         """ return print() and string() of rectangle """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
