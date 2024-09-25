@@ -20,6 +20,8 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def save_to_file(cls, list_objs):
+        """ JSON string representation of list_objs to a file: """
     def update(self, *args, **kwargs):
         """ assign args to sttributes """
         if args:
