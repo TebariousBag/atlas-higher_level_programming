@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ class square """
 from models.rectangle import Rectangle
-import json
 
 
 class Square(Rectangle):
@@ -49,13 +48,6 @@ class Square(Rectangle):
                     self.y = value
                 else:
                     continue
-
-    def to_json_string(list_dictionaries):
-        """ return json """
-        if list_dictionaries is None or list_dictionaries == []:
-            return "[]"
-        to_json = json.dumps(list_dictionaries)
-        return to_json
 
     def __str__(self):
         """ str represtation """
