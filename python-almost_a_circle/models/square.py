@@ -49,6 +49,13 @@ class Square(Rectangle):
                 else:
                     continue
 
+    def to_json_string(list_dictionaries):
+        """ return json """
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        tojson = json.dumps(list_dictionaries)
+        return tojson
+
     def __str__(self):
         """ str represtation """
         return "[Square] ({}) {}/{} - {}".format(
