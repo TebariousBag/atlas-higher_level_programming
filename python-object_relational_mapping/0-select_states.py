@@ -5,7 +5,7 @@ import sys
 
 
 if __name__ == "--main__":
-	db = MySQLdb.connect(host=localhost, user=MY_USER, passwd=MY_PASS, db=MY_DB, port=3306)
+	db = MySQLdb.connect(host="localhost", user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], port=3306)
 	cur = db.cursor()
 	cur.execute("SELECT * FROM states ORDER BY id")
 	rows = cur.fetchall()
