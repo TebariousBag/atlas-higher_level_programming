@@ -10,7 +10,6 @@ if __name__ == "--main__":
 	cur.execute("SELECT * FROM states ORDER BY id")
 	rows = cur.fetchall()
 	for row in rows:
-		for col in row:
 			print(row)
 	# Close all cursors
 	cur.close()
