@@ -14,7 +14,8 @@ if __name__ == "__main__":
     rows = cur.fetchall()
     for i in rows:
         tmp = i[0]
-        print(tmp, sep=", ")
+        print(tmp)
+        print(f", ")
 
     cur.close
     db.close
