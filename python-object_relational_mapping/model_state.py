@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 """ file that contains the class definition of a
 State and an instance Base = declarative_base() """
-import sys
-from model_state import Base, State
-
-from sqlalchemy import (create_engine)
+from sqlalchemy import Column, Integer, String
+from sqlalchemy import declaritive_base
 
 
-if __name__ == "__main__":
-	engine = create_engine()
+class State(Base):
+	""" state class """
+	__tablename__ = 'states'
+
+	id = Column(Integer, primary_key=True, nullable=False)
+	Name = Column(String(128), nullable=False)
+
+Base = declarative_base()
