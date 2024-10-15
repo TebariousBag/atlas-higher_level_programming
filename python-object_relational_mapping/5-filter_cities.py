@@ -15,7 +15,7 @@ if __name__ == "__main__":
     tmp = ()
     for i in rows:
         tmp+= i
-    print(tmp, sep=", ")
+    print(*tmp, sep=", ")
 
     cur.close
     db.close
