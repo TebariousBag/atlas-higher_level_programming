@@ -12,10 +12,10 @@ if __name__ == "__main__":
                 INNER JOIN states ON states.id=cities.state_id \
                 WHERE states.name=%s", (argv[4],))
     rows = cur.fetchall()
+    tmp = ()
     for i in rows:
-        tmp = i[0]
-        print(tmp)
-        print(f", ")
+        tmp+= i
+    print(tmp, sep=", ")
 
     cur.close
     db.close
