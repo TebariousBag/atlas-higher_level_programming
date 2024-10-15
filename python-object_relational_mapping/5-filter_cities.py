@@ -14,7 +14,7 @@ if __name__ == "__main__":
     rows = cur.fetchall()
     tmp = ()
     for i in rows:
-        tmp+= i
+        tmp += i
     print(*tmp, sep=", ")
 
     cur.close
