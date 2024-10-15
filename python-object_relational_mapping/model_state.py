@@ -1,4 +1,4 @@
-#!/usr/bin/pythoon3
+#!/usr/bin/python3
 """ file that contains the class definition of a
 State and an instance Base = declarative_base() """
 import sys
