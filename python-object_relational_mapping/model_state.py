@@ -13,5 +13,3 @@ class State(Base):
 
 	id = Column(Integer, primary_key=True, nullable=False)
 	Name = Column(String(128), nullable=False)
-
-Base = declarative_base()
