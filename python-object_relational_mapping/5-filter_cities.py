@@ -11,7 +11,7 @@ if __name__ == "__main__":
     cur.execute(("SELECT cities.name "
                  "FROM cities INNER JOIN states "
                  "ON states.id=cities.state_id "
-                 "Where states.name=%s" (argv[4],)))
+                 "Where states.name=%s", (argv[4],)))
     rows = cur.fetchall()
     for i in rows:
         print(f"{i[0]} ({i[1]})")
