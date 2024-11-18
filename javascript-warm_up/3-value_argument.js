@@ -6,5 +6,5 @@ if (args[0] === undefined) {
   console.log('No argument');
 // if arg than print arg
 } else {
-	  console.log(args[0]);
+  console.log(args[0]);
 }

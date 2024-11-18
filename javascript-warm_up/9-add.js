@@ -8,12 +8,12 @@ const b = parseInt(args[1]);
 
 // function asked for
 function add (a, b) {
-	  return a + b;
+  return a + b;
 }
 
 // if a or b is NaN, print NaN
 if (isNaN(a) || isNaN(b)) {
-	  console.log('NaN');
+  console.log('NaN');
 } else {
-	  console.log(add(a, b));
+  console.log(add(a, b));
 }
