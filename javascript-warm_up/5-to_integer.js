@@ -5,8 +5,7 @@ const args = process.argv.slice(2);
 const int = parseInt(args[0]);
 // if NotaNumber, print Not a number
 // else print the number
-if (isNaN(int))
-	{
+if (isNaN(int)) {
   console.log('Not a number');
 } else {
 	  console.log(`My number: ${int}`);

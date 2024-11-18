@@ -6,9 +6,9 @@ const num = parseInt(args[0]);
 // function factorial(num)
 function factorial (num) {
   if (isNaN(num) || num <= 1) {
-	return 1;
+    return 1;
   }
   return num * factorial(num - 1);
 }
-//print result
+// print result
 console.log(factorial(num));
