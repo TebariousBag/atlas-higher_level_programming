@@ -7,9 +7,9 @@ args = args.map(Number);
 if (args.length < 2) {
   console.log(0);
 } else {
-	// sort args ascending
-	const sorted = args.sort((a, b) => a - b);
-	// print the next to last
-	// which is the second biggest
-	console.log(sorted[sorted.length - 2]);
+  // sort args ascending
+  const sorted = args.sort((a, b) => a - b);
+  // print the next to last
+  // which is the second biggest
+  console.log(sorted[sorted.length - 2]);
 }
