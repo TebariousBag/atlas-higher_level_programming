@@ -22,8 +22,6 @@ requesting(url, (error, response, body) => {
       tasks[todo.userId]++;
     }
   });
-  // print user id and completed tasks
-  for (const userId in tasks) {
-    console.log(`'${userId}': ${tasks[userId]},`);
-  }
+  // print user id and completed tasks in JSON format
+  console.log(JSON.stringify(tasks));
 });
