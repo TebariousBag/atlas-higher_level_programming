@@ -7,19 +7,19 @@ const url = process.argv[2];
 const id = '18';
 // make a request to GET url, unless error
 request(url, (error, response, body) => {
-    if (error) {
-        console.error('Error:', error);
-        return;
+  if (error) {
+    console.error('Error:', error);
+    return;
+  }
+  // parse body
+  const films = JSON.parse(body).results;
+  let count = 0;
+  // count goes up for each time id is found
+  films.forEach(film => {
+    if (film.characters.includes(`https://swapi-api.hbtn.io/api/people/${id}/`)) {
+      count++;
     }
-	// parse body
-    const films = JSON.parse(body).results;
-    let count = 0;
-    // count goes up for each time id is found
-    films.forEach(film => {
-        if (film.characters.includes(`https://swapi-api.hbtn.io/api/people/${id}/`)) {
-            count++;
-        }
-    });
+  });
 
-    console.log(count);
+  console.log(count);
 });

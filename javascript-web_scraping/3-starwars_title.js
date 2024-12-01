@@ -8,8 +8,8 @@ const url = 'https://swapi-api.hbtn.io/api/films/' + movie;
 // make request to url, unless error
 requesting(url, (error, response, body) => {
   if (error) {
-	console.error(error);
+    console.error(error);
   } else {
-	console.log(JSON.parse(body).title);
+    console.log(JSON.parse(body).title);
   }
 });
