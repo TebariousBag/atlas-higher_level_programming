@@ -22,6 +22,7 @@ requesting(url, (error, response, body) => {
       tasks[todo.userId]++;
     }
   });
-  // print user id and completed tasks in JSON format
-  console.log(JSON.stringify(tasks));
+  // print user id and completed tasks in formatted JSON
+  const formattedTasks = JSON.stringify(tasks, null, 2).replace(/"/g, "'");
+  console.log(formattedTasks);
 });
