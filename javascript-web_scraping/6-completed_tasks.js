@@ -24,6 +24,6 @@ requesting(url, (error, response, body) => {
   });
   // print user id and completed tasks
   for (const userId in tasks) {
-    console.log(`User ${userId} has completed ${tasks[userId]} tasks`);
+    console.log(`'${userId}': ${tasks[userId]},`);
   }
 });
