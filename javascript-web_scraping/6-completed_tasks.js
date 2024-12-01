@@ -23,9 +23,6 @@ requesting(url, (error, response, body) => {
     }
   });
   // print user id and completed tasks in formatted JSON
-  const formattedTasks = JSON.stringify(tasks, null, 2)
-    .replace(/"/g, "'")
-    .replace(/^{/, '{ ')
-    .replace(/}$/, ' }');
+  const formattedTasks = JSON.stringify(tasks, null, 2).replace(/"/g, "'");
   console.log(formattedTasks);
 });
